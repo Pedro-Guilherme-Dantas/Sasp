@@ -6,7 +6,7 @@
 package gui;
 
 
-import AudiosFaceis.SonsF;
+import audios.SonsF;
 import javax.swing.ImageIcon;
 import static com.sun.java.accessibility.util.AWTEventMonitor.addKeyListener;
 import java.applet.Applet;
@@ -270,8 +270,8 @@ public class TelaGameplay extends javax.swing.JFrame {
         }
         
         }catch(Exception e){
-            JOptionPane.showMessageDialog(this," Não foi possível reproduzir a palavra",
-                    "Parabéns, você ganhou!! ", JOptionPane.INFORMATION_MESSAGE,img1);
+            JOptionPane.showMessageDialog(this," Não foi possível reproduzir a palavra, tente novamente",
+                    "!! ", JOptionPane.INFORMATION_MESSAGE,img1);
         }
           
         
@@ -308,7 +308,7 @@ public class TelaGameplay extends javax.swing.JFrame {
         
         lblVidas.setText(p.getVidas()+"");
          
-        if(p.getAcertos() == 30){
+        if(p.getAcertos() == 25){
             p.setPontos((p.getAcertos()*3)-p.getErros());
             TelaFinal ty = new TelaFinal(p.getAcertos(),p.getErros(),p.getPontos(),p.getNome(),img);
             JOptionPane.showMessageDialog(this, "Você Ganhou!!",

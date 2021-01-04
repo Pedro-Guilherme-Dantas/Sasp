@@ -17,7 +17,7 @@ public class Jogador {
         acertos = 0;
         fase = 1;
         pontos = 0;
-        vidas = 10;
+        vidas = 5;
     }
 
     public int getErros() {

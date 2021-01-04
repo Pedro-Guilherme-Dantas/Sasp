@@ -1,7 +1,7 @@
 
 package Main;
 
-import AudiosFaceis.SonsF;
+import audios.SonsF;
 import static com.sun.java.accessibility.util.AWTEventMonitor.addKeyListener;
 import gui.TelaPrincipal;
 import java.applet.Applet;

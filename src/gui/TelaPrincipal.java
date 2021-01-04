@@ -34,17 +34,17 @@ public class TelaPrincipal extends javax.swing.JFrame {
         this.setSize(600,520);
         
         sobre = "--------------REGRAS--------------------\n" 
-                +"No jogo você tem 10 vidas \n"
+                +"No jogo você tem 5 vidas \n"
                 +"São 3 fases: Fácil, Média e Difícil \n"
-                +"Você precisa acertar um total de 30 \n"
+                +"Você precisa acertar um total de 25 \n"
                 +"palavras para completar o jogo \n"
-                +"A cada 5 acertos, ganha uma vida \n"
+                +"A cada 5 acertos, +1 de vida é adicionado \n"
                 +"1 acerto equivale a mais 3 pontos \n"
                 +"1 erro equivale a menos 1 ponto \n"
                 +"Você pode ver o significado da palavra \n"
                 +"uma vez \n"
                 +"Criação e produção : \n"
-                +"Lucas Almeida e Pedro Guilherme";
+                +"Pedro Guilherme e Lucas Almeida";
         
     }
     
@@ -110,7 +110,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         });
         getContentPane().add(btnIniciar, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 230, 160, 40));
 
-        jButton3.setText("Sobre");
+        jButton3.setText("Regras");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
